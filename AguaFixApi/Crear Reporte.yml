@@ -1,0 +1,25 @@
+info:
+  name: Crear Reporte
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:3000/reports
+  body:
+    type: json
+    data: |-
+      {
+        "address": "Av. Insurgentes 123, León",
+        "description": "Fuga grande en la banqueta, sale mucha agua",
+        "severity": "high",
+        "reporterPhone": "4771234567"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
