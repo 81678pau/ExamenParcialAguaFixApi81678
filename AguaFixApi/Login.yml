@@ -8,10 +8,10 @@ http:
   url: http://localhost:3000/auth/login
   body:
     type: json
-    data: |-
+    data: |
       {
-        "email": "ppp@example.com",
-        "password": "12345678"
+        "email": "paulinag@example.com",
+        "password": "aguafix2026"
       }
   auth: inherit
 

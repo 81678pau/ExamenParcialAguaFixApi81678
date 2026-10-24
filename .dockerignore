@@ -1,0 +1,11 @@
+.env
+.env.*
+compose.yaml
+node_modules
+dist
+.git
+.github
+*.tsbuildinfo
+AguaFixApi
+test
+README.md

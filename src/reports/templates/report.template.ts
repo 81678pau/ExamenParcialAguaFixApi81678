@@ -1,6 +1,6 @@
 import { CreateReportDto } from '../dto/create-report.dto';
 
-export function generateReportTemplate(dto: CreateReportDto): string {
+export function generateReportTemplate(dto: CreateReportDto, photoUrl: string): string {
     return `
     <!DOCTYPE html>
     <html lang="es">
@@ -38,6 +38,8 @@ export function generateReportTemplate(dto: CreateReportDto): string {
                             <td style="padding: 8px; color: #333333;">${dto.reporterPhone}</td>
                         </tr>
                     </table>
+                    <p style="color: #555555; font-weight: bold; margin: 20px 0 8px 0;">Foto de la fuga</p>
+                    <img src="${photoUrl}" alt="Foto de la fuga" style="max-width: 100%; border-radius: 6px;" />
                 </td>
             </tr>
             <tr>

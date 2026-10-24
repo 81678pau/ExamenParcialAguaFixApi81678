@@ -8,11 +8,11 @@ http:
   url: http://localhost:3000/auth/register
   body:
     type: json
-    data: |-
+    data: |
       {
-        "name": "pppp",
-        "email": "ppp@example.com",
-        "password": "12345678",
+        "name": "Paulina Gonzalez",
+        "email": "paulinag@example.com",
+        "password": "aguafix2026",
         "isNotificationEnabled": true
       }
   auth: inherit

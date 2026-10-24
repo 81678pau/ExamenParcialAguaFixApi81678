@@ -8,12 +8,12 @@ http:
   url: http://localhost:3000/reports
   body:
     type: json
-    data: |-
+    data: |
       {
-        "address": "Av. Insurgentes 123, León",
-        "description": "Fuga grande en la banqueta, sale mucha agua",
+        "address": "Blvd perros 123",
+        "description": "Tubería reventada, se está encharcando la calle",
         "severity": "high",
-        "reporterPhone": "4771234567"
+        "reporterPhone": "4779876543"
       }
   auth: inherit
 

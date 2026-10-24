@@ -9,8 +9,8 @@ export class ReportsService {
         private readonly reportsRepository: ReportsRepository
     ) {}
 
-    async create(dto: CreateReportDto): Promise<Report> {
-        return this.reportsRepository.create(dto);
+    async create(dto: CreateReportDto, photoUrl: string): Promise<Report> {
+        return this.reportsRepository.create(dto, photoUrl);
     }
 
     async findAll(): Promise<Report[]> {

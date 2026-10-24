@@ -23,4 +23,12 @@ export class Report {
 
     @CreateDateColumn()
     createdAt!: Date;
+
+    // URL de la foto de la fuga (S3)
+    @Column({ type: 'varchar', nullable: true })
+    photoUrl!: string | null;
+
+    // El examen la pide en el GET; queda vacía (null) hasta que exista una foto de reparación
+    @Column({ type: 'varchar', nullable: true })
+    repairPhotoUrl!: string | null;
 }
